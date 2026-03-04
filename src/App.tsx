@@ -1,12 +1,17 @@
 import './App.css'
-import Navigation from './components/Navigation'
-import Search from './components/Search'
+import TopAppBar from './components/TopAppBar'
+
+
 
 function App() {
   return (
     <>
-      <Search />
-      <Navigation />
+      <header>
+        <TopAppBar />
+      </header>
+      <main>
+
+      </main>
     </>
   )
 }
