@@ -1,0 +1,1 @@
+export type TCategory = 'all' | 'design' | 'analytics' | 'management' | 'ios' | 'android'

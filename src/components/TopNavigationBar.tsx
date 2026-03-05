@@ -4,7 +4,7 @@ export default function TopNavigationBar() {
 	return(
 		<nav className="mt-5 flex gap-5 border-b border-[#EDEDED]">
 			<NavLink 
-				to="/" 
+				to="/all" 
 				className={({isActive}) => isActive ? "border-b-2 border-[#6534FF]" : "text-[#97979B]"}
 			>Все</NavLink>
 			<NavLink 
