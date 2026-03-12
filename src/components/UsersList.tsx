@@ -39,25 +39,18 @@ export default function UsersList() {
     <div>
       <div className="grid grid-cols-1 gap-4">
         {users.map((user) => (
-          <div key={user.id}>
-            {user.avatarUrl ? (
-              <img
-                src={user.avatarUrl}
-                alt={user.firstName}
-                className="w-12 h-12 rounded-full"
-              />
-            ) : (
-              <img
-                src={'/public/zaglushka.jpg'}
-                alt={user.firstName}
-                className="w-12 h-12 rounded-full"
-              />
-            )}
-            <h3>
-              {user.firstName} {user.lastName}
-            </h3>
-            <p className="text-gray-600">{user.position}</p>
-            <p className="text-sm text-gray-500">{user.department}</p>
+          <div key={user.id} className="flex gap-5">
+            <img
+              src={'/public/zaglushka.jpg'}
+              className="w-12 h-12 rounded-full"
+            />
+            <div>
+              <h3>
+                {user.firstName} {user.lastName}
+              </h3>
+              <p className="text-gray-600">{user.position}</p>
+              <p className="text-sm text-gray-500">{user.department}</p>
+            </div>
           </div>
         ))}
       </div>
